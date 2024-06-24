@@ -4,8 +4,8 @@ provider "aws" {
         secret_key = "zz+EPXAlZPObN1cxCUeBxLySQGwu1FZ75bDFEP/I"
 }
 
-resource "aws_s3_bucket" "TFbucketandy" {
-  bucket = "my-tf-test-bucket"
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "mytftestbucket4999"
 
   tags = {
     Name        = "My bucket"
