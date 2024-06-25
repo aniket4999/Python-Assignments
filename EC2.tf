@@ -8,7 +8,7 @@ resource "aws_instance" "example_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "TerraformEC2"
+    Name = "1TerraformEC2"
   }
 }
 
