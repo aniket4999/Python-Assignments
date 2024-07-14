@@ -3,7 +3,7 @@ pipeline {
     docker {image 'node:16-apline'}
   }
   stages {
-    stage{'Test'} {
+    stage('Test') {
       steps {
         sh 'node --version'
       }
