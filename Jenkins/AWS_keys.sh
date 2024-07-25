@@ -14,3 +14,5 @@ echo "$AWS_SECRET_ACCESS_KEY"
 echo "$AWS_SESSION_TOKEN"
 #aws sts get-caller-identity
 echo "After assuming role"
+echo"------------------------"
+aws ec2 describe-instances     --query 'Reservations[0].Instances[0].NetworkInterfaces[0].Attachment.AttachmentId'  --output json
