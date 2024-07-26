@@ -15,4 +15,7 @@ echo "$AWS_SESSION_TOKEN"
 #aws sts get-caller-identity
 echo "After assuming role"
 echo"------------------------"
-aws ec2 describe-instances     --query 'Reservations[0].Instances[0].NetworkInterfaces[0].Attachment.AttachmentId'  --output json
+aws ec2 describe-instances     --query 'Reservations[0].Instances[0].NetworkInterfaces[0].Attachment.AttachmentId' \
+--filters "Name=instance-type,Values=t2.micro" \
+--output json
+#--output table or text
