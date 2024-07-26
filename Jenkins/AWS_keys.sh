@@ -19,3 +19,7 @@ aws ec2 describe-instances     --query 'Reservations[0].Instances[0].NetworkInte
 --filters "Name=instance-type,Values=t2.micro" \
 --output json
 #--output table or text
+
+#Create instance 
+
+#aws ec2 run-instances --image-id ami-0427090fd1714168b --count 1 --instance-type t2.micro --key-name key-02 --security-group-ids sg-06de595cfe17d5f71 --subnet-id subnet-054c4912158d85c1
